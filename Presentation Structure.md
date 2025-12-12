@@ -1,0 +1,62 @@
+- AGI definition
+	- Break term down into parts
+		- Artificial -> non human/biological/human-created
+		- General -> ~better than/equivalent to human or many diverse capabilities
+		- Intelligence -> this part is very poorly understood and makes everything vague
+	- Coupling to human intelligence
+	- Difficulty to define (human) intelligence
+	- This is already one of the most important points (come back to this often)
+		- Make clear at the end of every following chapter that everything is ambiguous as long as it is based on a vague definition
+			- Whether benchmarks are good depends on definition
+			- When it will be or can be reached depends on definition
+			- Implications depend on definition
+- Benchmarks
+	- Easiest part, because we can look at what has been proposed and some critics of it
+	- Comparison of current benchmarks (similarities/differences/approaches)
+		- E.g. Turing test, Abstraction and Reasoning Corpus, humanities last exam, tests focused on embodied AI (physical Turing test, coffee/Ikea test)
+	- Comparison to intelligence tests for humans
+- Feasibility
+	- Estimates of when/if AGI will be reached
+		- Highlight spectrum (from already reached to will/can never happen)
+	- Approaches
+		- Increasing multimodality, NN-size, etc. (advancing the current SOTA)
+			- Problem of training data and compute power
+			- Problem of complexity/overall approach
+				- Comparison human learning efficiency and large-scale NNs
+				- Comparison structural differences of biological and artificial neurons
+				- Comparison of functionality and efficiency (e.g. power consumption)
+		- More biologically inspired approaches (sticking closer to the definition's basis)
+			- E.g. neuromorphic computing, whole brain simulation, evolutionary algorithms
+			- Problem of "scanning resolution"
+			- Problem of emulation power (especially compared to efficiency of biological "original")
+			- Debate over sufficiency of whole brain emulation (as a concept)
+				- Intelligence is understood so little that there i no proof/guarantee that whole brain emulation is sufficient for AGI
+- Implications
+	- I would like to keep this part rather short
+		- The only empirical thing that can be done here is show the estimates of different people and show how often they were wrong in this or similar topics
+	- People have speculated about much more well-defined technologies
+		- Estimates still often ranged from end of humanity to utopia
+	- Here it is even harder to make any predictions
+		- Any prediction is either a gut feeling or relies on many hard to defend assumptions on underlying questions
+			- What is intelligence? How does AGI work? What can it do? How much "better" is it than humans? How expensive is it? When does it happen?
+		- Uncertainties of previous aspects (definition, approach, etc.) "stack up"
+	- Important task: AI alignment
+		- Currently problematic in SOTA LLMs (compare RLHF and jailbreaking attacks)
+		- Without clearer definition hard to say if alignment happens implicitly or needs to be done explicitly
+		- Without concrete technology hard to propose concrete strategies
+	- Common take: AGI will have substantial effect on many different aspects of human life
+		- But even this is "from our perspective"
+		- Comparison to other "revolutions" (cf. industrial or digital automation)
+			- Large impacts, but other large time scales (years to decades)
+			- There is no indication that AGI will be reached by single event
+			- Rather a iterative process over years and decades that we are arguably in the midst of
+- Summary
+	- Based on ambiguous definition the whole topic/debate is very fuzzy
+	- This kind of debate is NOT new
+		- Many historical debates where invention of concrete thing X led to discussion about potential future development Y
+	- The debate on AGI is based on very few facts (due to ambiguity in definition)
+		- Empirical perspective is currently limited to broad/general statements and summarizing peoples opinions/ideas/believes
+	- Mix of disciplines (sciences, philosophy/ethics, societal/politics) + uncertainty -> there are no (can be no) experts in AGI
+		- Not on the future developments at least, only on the debate about it (that is a scientific field)
+	- The AGI debate is not useless, but it is important to [focus on current actual developments](https://www.explainxkcd.com/wiki/index.php/1968:_Robot_Future) in AI
+- Discussion
