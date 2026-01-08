@@ -1,0 +1,33 @@
+- I am of course going to add references and citations
+	- I like to add several references for one point especially when representing opinions, etc.
+	- What is the best way to do that on the slides?
+- I am obviously going to talk way more than what is on the slides
+	- I am still in the process of preparing a first draft of my full speaker notes
+- Based on the speaker note ideas I have in mind so far I might have to cut a few smaller sections and talking points
+- The common thread throughout the presentation is that the entire discussion hinges on the “unfinished” definition of intelligence
+	- I will introduce this on slide 8 and mention it throughout the following sections
+- I found ways to make slides more interesting for some sections but not for all (yet)
+	- E.g. slides on benchmarks are rather “boring”
+	- How bad is that?
+- As the introduction I came up with a twee that sounds like it could be from Sam Altman, but that is over 50 years old and is actually from Marvin Minsky
+	- Is this ok, since I am technically intentionally misquoting?
+- I am still a bit uncertain about the depth in which I cover the topics
+	- Especially in the sections on AGI approaches and benchmarks I am essentially just giving a brought overview
+	- But I feel like I have not nearly enough time to go into more details without leaving out entire other parts of the four main aspects (definition, benchmarks, feasibility, and implications)
+- I am probably going to rethink the four summary points on the last slide
+	- I want them to be closer related to the sections of the presentation without having more than five summary points
+
+### Feedback from Marlen
+- Looks good overall
+- Introduction is good like this
+- Not all slides have to be super creative (e.g. the ones on benchmarks)
+	- Just make sure wording, text size, etc. looks good
+- Citations can be added on the slide vie hyperlinks
+	- I will use short names (e.g. author + year) and make that a clickable link
+- Add a slide on presentation structure
+	- Does not have to be long (just one point for every main section)
+	- Verbally summarize the presentations structure
+- Discussion questions look good as well
+	- Put the three to four best ones on one slide
+	- Preparing "devils advocate" position for better discussion is a good idea
+	- But Marlen thinks participant's view points are probably diverse enough to start a good discussion just based on the questions
