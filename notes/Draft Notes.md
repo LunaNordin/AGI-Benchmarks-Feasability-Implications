@@ -22,11 +22,14 @@
 - Introduction is good like this
 - Not all slides have to be super creative (e.g. the ones on benchmarks)
 	- Just make sure wording, text size, etc. looks good
-- Citations can be added on the slide vie hyperlinks
+- Citations can be added on the slide via hyperlinks
 	- I will use short names (e.g. author + year) and make that a clickable link
 - Add a slide on presentation structure
 	- Does not have to be long (just one point for every main section)
 	- Verbally summarize the presentations structure
+- Shortly talk about effected societal areas in impact section
+	- Establish a shared impact scope understanding
+	- Potentially reference some previous seminar presentations
 - Discussion questions look good as well
 	- Put the three to four best ones on one slide
 	- Preparing "devils advocate" position for better discussion is a good idea
