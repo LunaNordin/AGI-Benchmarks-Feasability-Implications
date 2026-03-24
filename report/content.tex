@@ -53,7 +53,7 @@ Since intelligence is central to human self-understanding, it is part of a multi
 These include, but are not limited to, neuroscience, psychology, biology, philosophy, as well as mathematics, and in the case of AI, even computer science.
 Each of these fields deals with different aspects and parts that are either considered parts of intelligence itself or closely related to it.
 Examples of these are rationality, the importance of external behavior and internal thought processes, reasoning capabilities, rationality, creativity, the ability to learn and abstract, as well as self-awareness and emotions.
-As a result, intelligence is defined differently depending on the scientific field in which it is discussed, and on top of that, is considered an incompletely understood concept in most of those fields.
+As a result, intelligence is defined differently depending on the scientific field in which it is discussed, and on top of that, it is considered an incompletely understood concept in most of those fields.
 While this diverse understanding is not unusual for a broad subject like intelligence, it poses a problem for AGI because it prevents a consensus on a universal definition of intelligence at this time.\\
 
 The fact that the vaguely defined term 'intelligence' builds the foundation of AGI as a concept leads to an ambiguous and subjective understanding of AGI.
@@ -67,9 +67,58 @@ That AGI is an ambiguous and overloaded term is exemplified by the recent trend 
 As mentioned in~\cref{sec:introduction}, several companies have stated AGI as a development goal.
 However, recently, many of these companies have started to replace the ambiguous term 'AGI' with individualized formulations.
 Examples of this include Meta's term 'personal superintelligence', Microsoft's formulation of 'humanist superintelligence', Amazon's 'useful general intelligence', and Anthropic's use of 'powerful AI'.
-While the usage of individualized terms for referring to AGI can help to raise awareness of the fact that a subjective interpretation is underlying the respective formulation, it cannot solve the fundamental problem of AGI's intrinsic ambiguity.
+While the use of individualized terms to refer to AGI can help raise awareness that a subjective interpretation underlies the respective formulation, it cannot resolve the fundamental problem of AGI's intrinsic ambiguity.
 
 \section{Benchmarks}\label{sec:benchmarks}
+As discussed in the previous section, the definition of AGI is vague and does not provide universally accepted criteria to distinguish AGI from other forms of AI.
+Therefore, specialized benchmarks are necessary to assess potential AGI systems and to quantify progress in AGI development.
+In this chapter, we introduce and compare some popular and recent AGI benchmarking approaches.
+
+\subsection{The Turing Test}
+The Turing test was introduced in 1949 by Alan Turing as a technique to test a machine's ability to exhibit human-equivalent intelligence.
+It is based on the concept of indistinguishability in the use of language between the tested machine and a human.
+To test this, a human evaluator can communicate, typically in writing, with both a machine and a human.
+If the evaluator is unable to distinguish the machine from the human conversational partner based on the communication transcripts, the machine passes the test.\\
+
+Today, the Turing test is not considered an effective measure of human-equivalent intelligence, mainly because it was passed multiple times by simple and even non-AI-based dialog systems like ELIZA.
+While skill in language use can be a sign of intelligence, which often uses some form of language as a tool, several forms of language models have proven that learning to produce language does not guarantee intelligence as a byproduct.
+
+\subsection{Humanity's Last Exam}
+Humanity's Last Exam is a benchmark to test expert-level knowledge in LLMs.
+It consists of 2500 questions from various scientific fields that are text and image-based.
+The benchmark was created to mitigate the typically very high scores of modern LLMs in previous LLM benchmarks by introducing harder questions.
+It was therefore created as a more modern and meaningful assessment of LLMs and is not directly intended to test for AGI traits.
+The benchmark's authors explicitly state that a high score in Humanity's Last Exam does not, on its own, qualify a system as AGI.
+Yet, the underlying concept of expert-level knowledge in not just one, but many academic fields is often considered to be at least one aspect of AGI.
+
+\subsection{Abstraction and Reasoning Corpus}
+Unlike Humanity's Last Exam, the Abstraction and Reasoning Corpus (ARC) is meant to be a direct benchmark for AGI.
+ARC-AGI focuses on fluent intelligence, which is defined by the ability to apply reasoning and generalize previously learned skills to previously unseen problems.
+This distinguishes it further from Humanity's Last Exam, which tests mainly crystallized intelligence, which is characterized by learned knowledge and abstraction.
+ARC-AGI-2, the current version of the benchmark, uses static visual puzzles that require symbolic interpretation and subsequent reasoning to be solved efficiently.
+The upcoming ARC-AGI-3 expands these concepts by introducing conceptually similar, but interactive puzzles.
+The fundamental idea of all ARC-AGI versions is to create tests that are relatively simple to solve for humans but hard for current AI systems, to gradually steer systems developed for these benchmarks towards human-like intelligence.
+
+\subsection{Physical Turing Tests}
+The property of embodiment and the ability to interact with the physical world are often regarded as central to human intelligence and to intelligence as a general concept.
+As a consequence, multiple AGI benchmarks focus on physical aspects of intelligent behavior.
+Many of these follow the same heuristic as the Turing test and the ARC-AGI benchmark, and try to capture aspects of intelligence currently not exhibited by AI systems.
+To do so, these benchmarks focus on tasks that are mostly trivial for humans but hard to solve for current AI systems.\\
+
+Examples of such benchmarks are the IKEA test, in which a robot system has to assemble flat-pack furniture, or the coffee test, in which an embodied AI is tasked to enter a standard human home and independently prepare a cup of coffee by locating and utilizing all necessary ingredients and equipment.
+A test that more closely resembles the core idea of indistinguishability in the original Turing test is the physical Turing test proposed by Jim Fan.
+In this test, a robot has to clean up a messy living environment and prepare a dinner, but is judged by the indistinguishability of the result from human labor rather than its strategy during the task fulfillment.
+
+\subsection{The State of AGI Benchmarking}
+The examples of AGI benchmarks presented above highlight that there are currently many diverse understandings of what a test for AGI needs to examine.
+The diversity of benchmarking approaches can be traced back to the diversity of AGI interpretations discussed in~\cref{sec:definition}.
+As people understand the ambiguous definition of AGI differently, their subjective views on AGI are based on different properties, which their respective benchmark proposals are optimized to test for.
+The fact that most of the benchmarks are easy to combine does not solve this ambiguity issue.
+It would still leave the question open as to which properties have to be included in a combined benchmark and when all aspects required for AGI are sufficiently covered.\\
+
+Although the Turing test is not used as an AGI benchmark today, it remains an instructive example of the difficulty of defining evaluation metrics for intelligence before developing intelligent systems.
+The fact that language proficiency was considered a suitable measure of intelligence before the invention of highly capable language and dialog models can be seen as an indicator that many of the concepts underlying modern AGI benchmarks might prove to be just as insufficient in the future.
+
 \section{Feasibility}\label{sec:feasibility}
 \section{Implications}\label{sec:implications}
 
