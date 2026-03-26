@@ -120,6 +120,80 @@ Although the Turing test is not used as an AGI benchmark today, it remains an in
 The fact that language proficiency was considered a suitable measure of intelligence before the invention of highly capable language and dialog models can be seen as an indicator that many of the concepts underlying modern AGI benchmarks might prove to be just as insufficient in the future.
 
 \section{Feasibility}\label{sec:feasibility}
+The feasibility of AGI is characterized by two central questions.
+The first, 'When will AGI be a reality?', addresses possible timelines for AGI development.
+The second question, 'How will AGI be implemented?' is about the technical details and ideas for approaches for AGI implementation.
+In the following, we present the most common answers to both questions and highlight how the ambiguous definition of AGI influences them, which we discussed in~\cref{sec:definition}.
+
+\subsection{Timelines}
+The most straightforward method to establish a timeline that describes the development of AGI is to survey experts and consolidate their individual estimates into an overall prognosis.
+This approach has been applied in several studies in recent years.
+The surveyed experts typically include computer scientists as well as analysts, scientists of other AGI-related fields, and influential AI industry workers and leaders.\\
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=\textwidth]{presentation/resources/01958ae7-cb8c-4340-a2e7-5b54c0ab5e7c_2076x1594.jpg}
+    \caption{Estimated timeline of AGI (here called HLMI for high-level machine intelligence) compiled from 2,778 experts surveyed in 2023. The experts selected for this survey are AI researchers with publications and highly regarded conferences.}
+    \label{fig:timeline}
+\end{figure}
+
+The main problem with using surveys to establish timeline estimates is that the expert's predictions heavily depend on their individual and subjective interpretation of the ambiguous AGI definition.
+While surveys try to combat this effect by phrasing the questions as clearly as possible, there is currently no universally accepted and unambiguous AGI definition to refer to.
+As a result, the experts' answers in most surveys are broadly distributed between the extremes of 'AGI has already been achieved' and 'AGI is conceptually impossible to implement'.
+An example for a timeline predicted by an expert survey is shown in~\cref{fig:timeline}.\\
+
+Besides the high variance in expert predictions, timelines also have the problem that expert surveys are imprecise development prognoses in general.
+As we exemplified with some examples of incorrect predictions of renowned AI experts in~\cref{sec:introduction}, individual expert predictions are unreliable, and there is no definitive evidence that combining many expert estimations in large-scale surveys improves the prediction reliability.
+Besides their individual and subjective understanding of AGI, experts' survey answers are likely also influenced by the current AI development pace, future funding prospects, and public expectations.
+The history of the field of AI, with multiple AI winters and phases of AI booms, has shown that these conditions tend to change regularly, often quite suddenly and drastically.
+
+\subsection{Technical Approaches}
+Because there are diverse understandings of AGI, there are also many ideas about how AGI could be implemented on a technical level.
+In the following, we present the currently most commonly pursued approach of scaling up neural-network-based AI models, as well as the most prominent alternative approach: adhering closer to biological analogs.
+
+\subsubsection{Scaling Neural Network Architectures}
+Most state-of-the-art AI systems are based on neural network architectures.
+In the context of AGI, transformer-based LLMs are currently most debated to potentially represent a predecessor of future AGI, but many other advanced AI systems are also based on neural networks.
+The predominant way of advancing these systems is to scale up the underlying networks.
+In this case, scaling means using larger networks with more parameters, which in turn constitutes a need for more training data and increasingly large computational resources.
+The increase in size of LLMs from 2018 to 2022 is displayed in~\cref{fig:llm_sizes}.
+Besides increasing network scale, advancements in network architectures and training methods are also an important part of further developing AI systems.
+Recent examples of these include the aforementioned transformer architecture, as well as the use of reinforcement learning from human feedback and forward-only gradient calculation.\\
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=\textwidth]{presentation/resources/llm_sizes.png}
+    \caption{Parameter numbers of state-of-the-art LLMs between 2018 and 2022. Since the parameter axis is log-scaled, the plot represents a roughly exponential increase over time.}
+    \label{fig:llm_sizes}
+\end{figure}
+
+The predominant problem with scaling up neural networks is the limitation in the availability of training data and computing resources.
+As network parameter numbers scale roughly exponentially (cf.~\cref{fig:llm_sizes}), high-quality training data starts to run out, and the building up of compute power lags behind.
+The root cause of this high training data requirement is the relatively low data efficiency of neural networks.
+Compared to human experts, AI systems usually require more training data to generalize well for a given task.\\
+
+From the perspective of AGI development, the problems associated with scaling neural networks are not the main concern with this approach.
+It is, instead, the lack of concrete evidence that scaling neural-network-based AI systems can or will eventually lead to AGI.
+While large neural networks are the approach that currently yields the most advanced AI systems, there is no guarantee that this development will continue, and it may not lead to AGI becoming a reality.
+
+\subsubsection{Bioinspired AI}
+One of the most investigated alternatives to artificial neural networks as the basis of modern AI systems is architectures that more closely resemble the biological neural foundations of human intelligence.
+While the components of artificial neural networks are referred to as neurons, they are more of a mathematical framework for function approximation than a detailed replication of neuron cells.
+A more realistic emulation of biological neuron structures on both the hardware and the architectural level has the potential to provide human-level learning efficiency and might also be able to replicate human-like intelligence in the future.\\
+
+The most common architecture in bioinspired, also referred to as neuromorphic, computing is spiking neural networks.
+Like pulses in biological neuron systems, these networks do not encode signals in the amplitude of neuron activations but in the timing and or frequency of signal spikes.
+To emulate the behavior of biological neurons efficiently, specialized neuromorphic computing hardware is being developed.
+An example of this is the spiking neural network architecture (SpiNNaker), which was used to construct a supercomputer with over one million ARM cores specialized for neuron emulation.
+Its predecessor, SpiNNcloud, deployed at the TU Dresden, uses more than five million cores to emulate over 5.2 billion neurons, which makes it capable of emulating a single digit percentage of the neurons in a human brain.\\
+
+While advancements in the computational power of neuromorphic hardware make it seem plausible that the emulation of an entire brain on the neuron level might become possible in the future, the main problem with bioinspired AI lies in the network architecture.
+Efforts like the Human Brain Project work on capturing the brain's structure down to individual connections between neurons.
+But scanning techniques and resolutions are currently insufficient to yield a complete brain-sized network for emulation.
+Additionally, it is currently undetermined whether a detailed replication of a human brain is sufficient for replicating human intelligence and therefore achieving AGI.
+Even though the neuromorphic approach is more direct than scaling artificial neural networks, the monistic position of physicalism is not undisputed in philosophy. 
+And positions like mind–body dualism dispute that physical replication of the human brain is sufficient to replicate human intelligence.
+
 \section{Implications}\label{sec:implications}
 
  \section{Conclusion and Outlook}\label{sec:conclusion}
