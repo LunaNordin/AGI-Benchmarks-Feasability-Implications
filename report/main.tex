@@ -9,11 +9,6 @@
 % Table formatting
 \usepackage{booktabs}
 
-% Code blocks for Python
-\usepackage{listings}
-\usepackage{color}
-\usepackage{inconsolata}
-
 % References and Bibliography
 \usepackage[natbibapa]{apacite}
 \usepackage{natbib}
@@ -29,34 +24,19 @@
 \Crefname{equation}{Equation}{Equation}
 \crefname{equation}{Equation}{Equation}
 
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\newcommand{\documentlanguage}{english}  % Change to german if needed
 
-\lstdefinestyle{CustomPython}{
-	backgroundcolor=\color{backcolour},   
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{magenta},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},
-	basicstyle=\footnotesize,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
-	showstringspaces=false,
-	showtabs=false,                  
-	tabsize=2,
-	basicstyle=\scriptsize\ttfamily
-}
-
-\lstset{style=CustomPython}
-
-\input{custom_imports}
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}[2][]
+  {\if\relax\detokenize{#1}\relax
+     \def\quoteauthor{#2}%
+   \else
+     \def\quoteauthor{#2~---~#1}%
+   \fi
+   \oldquote}
+  {\par\nobreak\smallskip\hfill(\quoteauthor)%
+   \endoldquote\addvspace{\bigskipamount}}
 
 \begin{document}
 \begin{otherlanguage}{\documentlanguage}
