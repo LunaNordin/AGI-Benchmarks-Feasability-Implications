@@ -1,32 +1,32 @@
 \section{Introduction}\label{sec:introduction}
 
 Artificial general intelligence (AGI) is a topic that has gained increasing interest in both research and public discussion in recent years.
-The main driver of this increasing interest was the release and widespread adoption of ChatGPT-3 and subsequent large language models (LLMs).
-The rapid improvement of these LLMs with techniques like chain of thought reasoning, tool usage, and independent agentic action taking has brought up the question of how this new advancement in the broader field of artificial intelligence (AI) is related to the concept of AGI.
-Several of the companies developing some of the most popular LLMs, including OpenAI, Google, Anthropic, and Meta, have stated AGI as a long-term goal of their scientific efforts.\\
+The main driver of this increasing interest was the release and widespread adoption of ChatGPT and subsequent large language models (LLMs) \citep{brown_language_2020}.
+The rapid improvement of these LLMs with techniques such as chain-of-thought reasoning \citep{wei_chain--thought_2022}, tool use \citep{schick_toolformer_2023}, and independent, agentic action-taking has raised the question of how this advancement in the broader field of artificial intelligence (AI) relates to the concept of AGI.
+Several of the companies developing some of the most popular LLMs, including OpenAI \citep{openai_planning_2024}, Google \citep{legg_taking_2025}, Amazon \citep{link_amazon_2024}, and xAI \citep{kay_inside_nodate}, have stated AGI as a long-term goal of their scientific efforts.\\
 
 Despite the recent increase in focus on AGI, the concept is not new.
-Concepts of machines exhibiting intelligence equivalent to, or even surpassing, that of humans can not only be found in historical science fiction but also in science, mainly since the 1950s.
+Concepts of machines exhibiting intelligence equivalent to, or even surpassing, that of humans can be found not only in historical science fiction but also in science, mainly since the 1950s.
 Since then, the belief that AGI will be brought into existence within the foreseeable future is a constantly recurring belief among many influential figures in the field of AI.
 This becomes evident by comparing some statements of past and present influential speakers.
-Both the Dartmouth workshop attendee and co-founder of MIT's AI lab, Marvin Minsky:
+Both the Dartmouth workshop attendee and co-founder of MIT's AI lab, Marvin Minsky \citep{inc_life_1970}:
 \begin{quote}{Marvin Minsky - 1970}
 \setlength{\leftskip}{20pt}
 'In from three to eight years we will have a machine with the general intelligence of an average human being.'
 \end{quote}
-and the AI pioneer and co-founder of one of the world's first university computer science departments, Herbert A. Simon:
+and the AI pioneer and co-founder of one of the world's first university computer science departments, Herbert A. Simon \citep[p.96]{simon_shape_1965}:
 \begin{quote}{Herbert A. Simon - 1965}
 \setlength{\leftskip}{20pt}
 '[...] machines will be capable, within twenty years, of doing any work a man can do.'\footnote{It is worth noting that Simon described his own prediction as being the result of an 'armchair analysis' that he conducted in the context of estimating the impact of machine-based automation on human labor, and not a detailed scientific analysis.}
 \end{quote}
 predicted AGI to become a reality within a few years in the past.
 From today's perspective, the predictions of these two men, who were awarded the Turing Award for their foundational work in AI in 1969 and 1975, respectively, have proven incorrect.
-Yet they have a strong resemblance to recent predictions like the ones by DeepMind co-founder Demis Hassabis:
+Yet they have a strong resemblance to recent predictions like the ones by DeepMind co-founder Demis Hassabis \citep{rose_demis_2025}:
 \begin{quote}{Demis Hassabis - 2025}
 \setlength{\leftskip}{20pt}
 'We’ll have something that will exhibit all the cognitive capabilities humans have, maybe in the next five to 10 years.'
 \end{quote}
-or OpenAI co-founder and CEO Sam Altman:
+or OpenAI co-founder and CEO Sam Altman \citep{altman_intelligence_2024}:
 \begin{quote}{Sam Altman - 2024}
 \setlength{\leftskip}{20pt}
 'It is possible that we will have superintelligence in a few thousand days'\footnote{Altman's prediction here is for artificial superintelligence (ASI) that, by his own definition, surpasses AGI. He is criticized for the vague formulation of 'few thousand days'.}
@@ -43,7 +43,7 @@ Finally, we provide an outlook on the future development of AGI (cf.~\cref{sec:c
 
 \section{Definition}\label{sec:definition}
 
-To better understand the definition of AGI and its intrinsic ambiguity, it can help to break the term into its three parts:
+To better understand the definition of AGI and its intrinsic ambiguity, it can help to break the term into its three parts \citep{russell_artificial_2021}:
 \begin{enumerate}
     \item \textbf{Artificial:} The first part of the AGI acronym is the easiest to understand, because it aligns with the intuitive understanding of the term 'artificial'. In contrast to its natural counterpart, artificial intelligence is non-biological or human-made.
     \item \textbf{General:} While the meaning of this term does not align as directly with its intuitive understanding, its meaning in the definition is still well defined. It represents the assumption that AGI is equivalent to human intelligence in a broad spectrum or even all possible tasks. The difficulty posed by this part of the definition is not its meaning, but ways to measure and confirm it, which we further discuss in~\cref{sec:benchmarks}.
@@ -52,11 +52,11 @@ To better understand the definition of AGI and its intrinsic ambiguity, it can h
 Since intelligence is central to human self-understanding, it is part of a multitude of scientific disciplines.
 These include, but are not limited to, neuroscience, psychology, biology, philosophy, as well as mathematics, and in the case of AI, even computer science.
 Each of these fields deals with different aspects and parts that are either considered parts of intelligence itself or closely related to it.
-Examples of these are rationality, the importance of external behavior and internal thought processes, reasoning capabilities, rationality, creativity, the ability to learn and abstract, as well as self-awareness and emotions.
-As a result, intelligence is defined differently depending on the scientific field in which it is discussed, and on top of that, it is considered an incompletely understood concept in most of those fields.
+Examples of these are rationality, the importance of external behavior and internal thought processes, reasoning capabilities, creativity, the ability to learn and abstract, as well as self-awareness and emotions.
+As a result, intelligence is defined differently depending on the scientific field in which it is discussed, and on top of that, it is considered an incompletely understood concept in most of those fields \citep{hutson_agi_nodate}.
 While this diverse understanding is not unusual for a broad subject like intelligence, it poses a problem for AGI because it prevents a consensus on a universal definition of intelligence at this time.\\
 
-The fact that the vaguely defined term 'intelligence' builds the foundation of AGI as a concept leads to an ambiguous and subjective understanding of AGI.
+The fact that the vaguely defined term 'intelligence' builds the foundation of AGI as a concept leads to an ambiguous and subjective understanding of AGI \citep{hendrycks_definition_2025}.
 This ambiguity, in turn, affects all topics related to AGI.
 We showcase this propagation of ambiguity through different areas related to AGI in the following sections.
 The main actionable insight of understanding AGI's intrinsic ambiguity is that it is necessary to explicitly disambiguate any information or discussion related to AGI.
@@ -65,7 +65,7 @@ Otherwise, misunderstandings based on different subjective interpretations of th
 
 That AGI is an ambiguous and overloaded term is exemplified by the recent trend to replace it with alternative formulations to better reflect the subjective understanding of the one using the term.
 As mentioned in~\cref{sec:introduction}, several companies have stated AGI as a development goal.
-However, recently, many of these companies have started to replace the ambiguous term 'AGI' with individualized formulations.
+However, recently, many of these companies have started to replace the ambiguous term 'AGI' with individualized formulations \citep{field_ai_2025}.
 Examples of this include Meta's term 'personal superintelligence', Microsoft's formulation of 'humanist superintelligence', Amazon's 'useful general intelligence', and Anthropic's use of 'powerful AI'.
 While the use of individualized terms to refer to AGI can help raise awareness that a subjective interpretation underlies the respective formulation, it cannot resolve the fundamental problem of AGI's intrinsic ambiguity.
 
@@ -75,16 +75,16 @@ Therefore, specialized benchmarks are necessary to assess potential AGI systems 
 In this chapter, we introduce and compare some popular and recent AGI benchmarking approaches.
 
 \subsection{The Turing Test}
-The Turing test was introduced in 1949 by Alan Turing as a technique to test a machine's ability to exhibit human-equivalent intelligence.
+The Turing test was introduced in 1950 by Alan Turing as a technique to test a machine's ability to exhibit human-equivalent intelligence \citep{turing_icomputing_1950}.
 It is based on the concept of indistinguishability in the use of language between the tested machine and a human.
 To test this, a human evaluator can communicate, typically in writing, with both a machine and a human.
 If the evaluator is unable to distinguish the machine from the human conversational partner based on the communication transcripts, the machine passes the test.\\
 
-Today, the Turing test is not considered an effective measure of human-equivalent intelligence, mainly because it was passed multiple times by simple and even non-AI-based dialog systems like ELIZA.
-While skill in language use can be a sign of intelligence, which often uses some form of language as a tool, several forms of language models have proven that learning to produce language does not guarantee intelligence as a byproduct.
+Today, the Turing test is not considered an effective measure of human-equivalent intelligence, mainly because it was passed multiple times by simple and even non-AI-based dialog systems like ELIZA \citep{weizenbaum_elizagen}.
+While skill in language use can be a sign of intelligence, which often uses some form of language as a tool, several forms of language models have proven that learning to produce language does not guarantee intelligence as a byproduct \citep{riley_is_2025,fedorenko_language_2024}.
 
 \subsection{Humanity's Last Exam}
-Humanity's Last Exam is a benchmark to test expert-level knowledge in LLMs.
+Humanity's Last Exam is a benchmark to test expert-level knowledge in LLMs \citep{phan_humanitys_2025}.
 It consists of 2500 questions from various scientific fields that are text and image-based.
 The benchmark was created to mitigate the typically very high scores of modern LLMs in previous LLM benchmarks by introducing harder questions.
 It was therefore created as a more modern and meaningful assessment of LLMs and is not directly intended to test for AGI traits.
@@ -92,11 +92,11 @@ The benchmark's authors explicitly state that a high score in Humanity's Last Ex
 Yet, the underlying concept of expert-level knowledge in not just one, but many academic fields is often considered to be at least one aspect of AGI.
 
 \subsection{Abstraction and Reasoning Corpus}
-Unlike Humanity's Last Exam, the Abstraction and Reasoning Corpus (ARC) is meant to be a direct benchmark for AGI.
-ARC-AGI focuses on fluent intelligence, which is defined by the ability to apply reasoning and generalize previously learned skills to previously unseen problems.
+Unlike Humanity's Last Exam, the Abstraction and Reasoning Corpus (ARC) is meant to be a direct benchmark for AGI~\citep{arc_about}.
+ARC-AGI focuses on fluent intelligence, which is defined by the ability to apply reasoning and generalize previously learned skills to previously unseen problems \citep{chollet_measure_2019}.
 This distinguishes it further from Humanity's Last Exam, which tests mainly crystallized intelligence, which is characterized by learned knowledge and abstraction.
-ARC-AGI-2, the current version of the benchmark, uses static visual puzzles that require symbolic interpretation and subsequent reasoning to be solved efficiently.
-The upcoming ARC-AGI-3 expands these concepts by introducing conceptually similar, but interactive puzzles.
+ARC-AGI-2, the current version of the benchmark, uses static visual puzzles that require symbolic interpretation and subsequent reasoning to be solved efficiently \citep{chollet_arc-agi-2_2026}.
+The upcoming ARC-AGI-3 expands these concepts by introducing conceptually similar, but interactive puzzles \citep{foundation_arc-agi-3_2026}.
 The fundamental idea of all ARC-AGI versions is to create tests that are relatively simple to solve for humans but hard for current AI systems, to gradually steer systems developed for these benchmarks towards human-like intelligence.
 
 \subsection{Physical Turing Tests}
@@ -105,8 +105,8 @@ As a consequence, multiple AGI benchmarks focus on physical aspects of intellige
 Many of these follow the same heuristic as the Turing test and the ARC-AGI benchmark, and try to capture aspects of intelligence currently not exhibited by AI systems.
 To do so, these benchmarks focus on tasks that are mostly trivial for humans but hard to solve for current AI systems.\\
 
-Examples of such benchmarks are the IKEA test, in which a robot system has to assemble flat-pack furniture, or the coffee test, in which an embodied AI is tasked to enter a standard human home and independently prepare a cup of coffee by locating and utilizing all necessary ingredients and equipment.
-A test that more closely resembles the core idea of indistinguishability in the original Turing test is the physical Turing test proposed by Jim Fan.
+Examples of such benchmarks are the IKEA test \citep{turk_plan_2015}, in which a robot system has to assemble flat-pack furniture, or the coffee test \citep{goertzel_architecture_2012}, in which an embodied AI is tasked to enter a standard human home and independently prepare a cup of coffee by locating and utilizing all necessary ingredients and equipment.
+A test that more closely resembles the core idea of indistinguishability in the original Turing test is the physical Turing test proposed by Jim Fan \citep{sequoia_capital_physical_2025}.
 In this test, a robot has to clean up a messy living environment and prepare a dinner, but is judged by the indistinguishability of the result from human labor rather than its strategy during the task fulfillment.
 
 \subsection{The State of AGI Benchmarking}
@@ -127,19 +127,19 @@ In the following, we present the most common answers to both questions and highl
 
 \subsection{Timelines}
 The most straightforward method to establish a timeline that describes the development of AGI is to survey experts and consolidate their individual estimates into an overall prognosis.
-This approach has been applied in several studies in recent years.
+This approach has been applied in several studies in recent years \citep{grace_2022,grace_2023,zhang_2022,roser_ai_2023}.
 The surveyed experts typically include computer scientists as well as analysts, scientists of other AGI-related fields, and influential AI industry workers and leaders.\\
 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\textwidth]{presentation/resources/01958ae7-cb8c-4340-a2e7-5b54c0ab5e7c_2076x1594.jpg}
-    \caption{Estimated timeline of AGI (here called HLMI for high-level machine intelligence) compiled from 2,778 experts surveyed in 2023. The experts selected for this survey are AI researchers with publications and highly regarded conferences.}
+    \caption{Estimated timeline of AGI (here called HLMI for high-level machine intelligence) compiled from 2,778 experts surveyed in 2023. The experts selected for this survey are AI researchers with publications and highly regarded conferences \citep{grace_2023}.}
     \label{fig:timeline}
 \end{figure}
 
 The main problem with using surveys to establish timeline estimates is that the expert's predictions heavily depend on their individual and subjective interpretation of the ambiguous AGI definition.
 While surveys try to combat this effect by phrasing the questions as clearly as possible, there is currently no universally accepted and unambiguous AGI definition to refer to.
-As a result, the experts' answers in most surveys are broadly distributed between the extremes of 'AGI has already been achieved' and 'AGI is conceptually impossible to implement'.
+As a result, the experts' answers in most surveys are broadly distributed between the extremes of 'AGI has already been achieved' \citep{al-sibai_openai_2024,arcas_artificial_2023} and 'AGI is conceptually impossible to implement' \citep{dreyfus_what_1992,fjelland_why_2020}.
 An example for a timeline predicted by an expert survey is shown in~\cref{fig:timeline}.\\
 
 Besides the high variance in expert predictions, timelines also have the problem that expert surveys are imprecise development prognoses in general.
@@ -158,18 +158,18 @@ The predominant way of advancing these systems is to scale up the underlying net
 In this case, scaling means using larger networks with more parameters, which in turn constitutes a need for more training data and increasingly large computational resources.
 The increase in size of LLMs from 2018 to 2022 is displayed in~\cref{fig:llm_sizes}.
 Besides increasing network scale, advancements in network architectures and training methods are also an important part of further developing AI systems.
-Recent examples of these include the aforementioned transformer architecture, as well as the use of reinforcement learning from human feedback and forward-only gradient calculation.\\
+Recent examples of these include the aforementioned transformer architecture \citep{vaswani_attention_2017}, as well as the use of reinforcement learning from human feedback \citep{ouyang_training_2022} and forward-only gradient calculation \citep{baydin_gradients_2022}.\\
 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\textwidth]{presentation/resources/llm_sizes.png}
-    \caption{Parameter numbers of state-of-the-art LLMs between 2018 and 2022. Since the parameter axis is log-scaled, the plot represents a roughly exponential increase over time.}
+    \caption{Parameter numbers of state-of-the-art LLMs between 2018 and 2022. Since the parameter axis is log-scaled, the plot represents a roughly exponential increase over time \citep{luccioni_mounting_2023}.}
     \label{fig:llm_sizes}
 \end{figure}
 
-The predominant problem with scaling up neural networks is the limitation in the availability of training data and computing resources.
+The predominant problem with scaling up neural networks is the limitation in the availability of training data and computing resources \citep{hidary_ai_2025}.
 As network parameter numbers scale roughly exponentially (cf.~\cref{fig:llm_sizes}), high-quality training data starts to run out, and the building up of compute power lags behind.
-The root cause of this high training data requirement is the relatively low data efficiency of neural networks.
+The root cause of this high training data requirement is the relatively low data efficiency of neural networks \citep{huber_comparing_2024}.
 Compared to human experts, AI systems usually require more training data to generalize well for a given task.\\
 
 From the perspective of AGI development, the problems associated with scaling neural networks are not the main concern with this approach.
@@ -178,19 +178,19 @@ While large neural networks are the approach that currently yields the most adva
 
 \subsubsection{Bioinspired AI}
 One of the most investigated alternatives to artificial neural networks as the basis of modern AI systems is architectures that more closely resemble the biological neural foundations of human intelligence.
-While the components of artificial neural networks are referred to as neurons, they are more of a mathematical framework for function approximation than a detailed replication of neuron cells.
+While the components of artificial neural networks are referred to as neurons, they are more of a mathematical framework for function approximation than a detailed replication of neuron cells \citep{sarfraz_study_2023}.
 A more realistic emulation of biological neuron structures on both the hardware and the architectural level has the potential to provide human-level learning efficiency and might also be able to replicate human-like intelligence in the future.\\
 
-The most common architecture in bioinspired, also referred to as neuromorphic, computing is spiking neural networks.
+The most common architecture in bioinspired, also referred to as neuromorphic, computing is spiking neural networks \citep{maass_networks_1997}.
 Like pulses in biological neuron systems, these networks do not encode signals in the amplitude of neuron activations but in the timing and or frequency of signal spikes.
 To emulate the behavior of biological neurons efficiently, specialized neuromorphic computing hardware is being developed.
-An example of this is the spiking neural network architecture (SpiNNaker), which was used to construct a supercomputer with over one million ARM cores specialized for neuron emulation.
-Its predecessor, SpiNNcloud, deployed at the TU Dresden, uses more than five million cores to emulate over 5.2 billion neurons, which makes it capable of emulating a single digit percentage of the neurons in a human brain.\\
+An example of this is the spiking neural network architecture (SpiNNaker), which was used to construct a supercomputer with over one million ARM cores specialized for neuron emulation \citep{furber_spinnaker_2014}.
+Its predecessor, SpiNNcloud, deployed at the TU Dresden, uses more than five million cores to emulate over 5.2 billion neurons, which makes it capable of emulating a single digit percentage of the neurons in a human brain \citep{gonzalez_spinnaker2_2023}.\\
 
 While advancements in the computational power of neuromorphic hardware make it seem plausible that the emulation of an entire brain on the neuron level might become possible in the future, the main problem with bioinspired AI lies in the network architecture.
-Efforts like the Human Brain Project work on capturing the brain's structure down to individual connections between neurons.
-But scanning techniques and resolutions are currently insufficient to yield a complete brain-sized network for emulation.
-Additionally, it is currently undetermined whether a detailed replication of a human brain is sufficient for replicating human intelligence and therefore achieving AGI.
+Efforts like the Human Brain Project work on capturing the brain's structure down to individual connections between neurons \citep{human_brain_project}.
+But scanning techniques and resolutions are currently insufficient to yield a complete brain-sized network for emulation \citep{Zanichelli2025StateOB}.
+Additionally, it is currently undetermined whether a detailed replication of a human brain is sufficient for replicating human intelligence and therefore achieving AGI \citep[pp.1798-1801]{russell_artificial_2021}.
 Even though the neuromorphic approach is more direct than scaling artificial neural networks, the monistic position of physicalism is not undisputed in philosophy. 
 And positions like mind–body dualism dispute that physical replication of the human brain is sufficient to replicate human intelligence.
 
