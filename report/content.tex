@@ -37,7 +37,7 @@ Not only have the technical foundations of AI evolved, but so have other scienti
 As part of this seminar, which discusses critical aspects of AI technologies and their use, we investigate the current state of AGI in this report.
 Instead of approaching the topic from a technical direction, we put our main focus on the ambiguity that is intrinsic to AGI as a research field, and is mainly responsible for the recurring predictions of near-term AGI existence.
 To do so, we start by introducing the definition of AGI and its current vagueness in~\cref{sec:definition}.
-We then investigate the impact of this ambiguity on recently proposed AGI benchmarks (cf.~\cref{sec:benchmarks}), technical approaches, and estimation of AGI development time scales (cf.~\cref{sec:feasibility}), as well as the prediction of implications associated with AGI (cf.~\cref{sec:implications}).
+We then investigate the impact of this ambiguity on recently proposed AGI benchmarks (cf.~\cref{sec:benchmarks}), technical approaches (cf.~\cref{sec:technical_approaches}), and estimation of AGI development time scales (cf.~\cref{sec:timelines}), as well as the prediction of implications associated with AGI (cf.~\cref{sec:implications}).
 While the ambiguous definition of AGI is the concern that we built this report around, we also present up-to-date examples from AGI as a scientific field and the broader discussion around it to highlight the current state of AGI.
 Finally, we provide an outlook on the future development of AGI (cf.~\cref{sec:conclusion}), taking into account the impact of its ambiguous foundations on current research.
 
@@ -51,7 +51,7 @@ To better understand the definition of AGI and its intrinsic ambiguity, it can h
 \end{enumerate}
 Since intelligence is central to human self-understanding, it is part of a multitude of scientific disciplines.
 These include, but are not limited to, neuroscience, psychology, biology, philosophy, as well as mathematics, and in the case of AI, even computer science.
-Each of these fields deals with different aspects and parts that are either considered parts of intelligence itself or closely related to it.
+Each of these fields deals with different aspects and parts that are either considered aspects of intelligence itself or closely related to it.
 Examples of these are rationality, the importance of external behavior and internal thought processes, reasoning capabilities, creativity, the ability to learn and abstract, as well as self-awareness and emotions.
 As a result, intelligence is defined differently depending on the scientific field in which it is discussed, and on top of that, it is considered an incompletely understood concept in most of those fields \citep{hutson_agi_nodate}.
 While this diverse understanding is not unusual for a broad subject like intelligence, it poses a problem for AGI because it prevents a consensus on a universal definition of intelligence at this time.\\
@@ -60,17 +60,17 @@ The fact that the vaguely defined term 'intelligence' builds the foundation of A
 This ambiguity, in turn, affects all topics related to AGI.
 We showcase this propagation of ambiguity through different areas related to AGI in the following sections.
 The main actionable insight of understanding AGI's intrinsic ambiguity is that it is necessary to explicitly disambiguate any information or discussion related to AGI.
-To cope with this ambiguity, the question 'What underlying understanding of intelligence is assumed as the foundation of the term AGI here?' needs to be put first.
+To cope with this ambiguity, the question 'What underlying understanding of intelligence is assumed as the foundation of the term AGI in this context?' needs to be put first.
 Otherwise, misunderstandings based on different subjective interpretations of the term AGI will complicate or even prevent any discussion related to it.\\
 
-That AGI is an ambiguous and overloaded term is exemplified by the recent trend to replace it with alternative formulations to better reflect the subjective understanding of the one using the term.
+That AGI is an ambiguous and overloaded term is exemplified by the recent trend to replace it with alternative formulations to better reflect the contextual subjective understanding of the term.
 As mentioned in~\cref{sec:introduction}, several companies have stated AGI as a development goal.
 However, recently, many of these companies have started to replace the ambiguous term 'AGI' with individualized formulations \citep{field_ai_2025}.
 Examples of this include Meta's term 'personal superintelligence', Microsoft's formulation of 'humanist superintelligence', Amazon's 'useful general intelligence', and Anthropic's use of 'powerful AI'.
 While the use of individualized terms to refer to AGI can help raise awareness that a subjective interpretation underlies the respective formulation, it cannot resolve the fundamental problem of AGI's intrinsic ambiguity.
 
 \section{Benchmarks}\label{sec:benchmarks}
-As discussed in the previous section, the definition of AGI is vague and does not provide universally accepted criteria to distinguish AGI from other forms of AI.
+As discussed in the previous section, the definition of AGI is vague and does not offer universally accepted criteria to distinguish AGI from other forms of AI.
 Therefore, specialized benchmarks are necessary to assess potential AGI systems and to quantify progress in AGI development.
 In this chapter, we introduce and compare some popular and recent AGI benchmarking approaches.
 
@@ -81,11 +81,12 @@ To test this, a human evaluator can communicate, typically in writing, with both
 If the evaluator is unable to distinguish the machine from the human conversational partner based on the communication transcripts, the machine passes the test.\\
 
 Today, the Turing test is not considered an effective measure of human-equivalent intelligence, mainly because it was passed multiple times by simple and even non-AI-based dialog systems like ELIZA \citep{weizenbaum_elizagen}.
-While skill in language use can be a sign of intelligence, which often uses some form of language as a tool, several forms of language models have proven that learning to produce language does not guarantee intelligence as a byproduct \citep{riley_is_2025,fedorenko_language_2024}.
+Skilled language use can be a sign of intelligence, which often uses some form of language as a tool \citep{riley_is_2025,fedorenko_language_2024}.
+But several forms of language models have proven that learning to produce language does not guarantee intelligence as a byproduct.
 
 \subsection{Humanity's Last Exam}
 Humanity's Last Exam is a benchmark to test expert-level knowledge in LLMs \citep{phan_humanitys_2025}.
-It consists of 2500 questions from various scientific fields that are text and image-based.
+It consists of 2500 questions from various scientific fields that are text- and image-based.
 The benchmark was created to mitigate the typically very high scores of modern LLMs in previous LLM benchmarks by introducing harder questions.
 It was therefore created as a more modern and meaningful assessment of LLMs and is not directly intended to test for AGI traits.
 The benchmark's authors explicitly state that a high score in Humanity's Last Exam does not, on its own, qualify a system as AGI.
@@ -122,10 +123,11 @@ The fact that language proficiency was considered a suitable measure of intellig
 \section{Feasibility}\label{sec:feasibility}
 The feasibility of AGI is characterized by two central questions.
 The first, 'When will AGI be a reality?', addresses possible timelines for AGI development.
-The second question, 'How will AGI be implemented?' is about the technical details and ideas for approaches for AGI implementation.
-In the following, we present the most common answers to both questions and highlight how the ambiguous definition of AGI influences them, which we discussed in~\cref{sec:definition}.
+The second question, 'How will AGI be implemented?' is about the technical details and ideas on approaches for AGI implementation.
+In the following, we present the most common answers to both questions.
+We also highlight how the ambiguous definition of AGI, which we discussed in~\cref{sec:definition}, influences both of them.
 
-\subsection{Timelines}
+\subsection{Timelines}\label{sec:timelines}
 The most straightforward method to establish a timeline that describes the development of AGI is to survey experts and consolidate their individual estimates into an overall prognosis.
 This approach has been applied in several studies in recent years \citep{grace_2022,grace_2023,zhang_2022,roser_ai_2023}.
 The surveyed experts typically include computer scientists as well as analysts, scientists of other AGI-related fields, and influential AI industry workers and leaders.\\
@@ -133,7 +135,7 @@ The surveyed experts typically include computer scientists as well as analysts, 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\textwidth]{presentation/resources/01958ae7-cb8c-4340-a2e7-5b54c0ab5e7c_2076x1594.jpg}
-    \caption{Estimated timeline of AGI (here called HLMI for high-level machine intelligence) compiled from 2,778 experts surveyed in 2023. The experts selected for this survey are AI researchers with publications and highly regarded conferences \citep{grace_2023}.}
+    \caption{Estimated timeline of AGI development (here called HLMI for high-level machine intelligence) compiled from 2,778 experts surveyed in 2023. The experts selected for this survey are AI researchers with publications at highly regarded conferences \citep{grace_2023}.}
     \label{fig:timeline}
 \end{figure}
 
@@ -142,18 +144,19 @@ While surveys try to combat this effect by phrasing the questions as clearly as 
 As a result, the experts' answers in most surveys are broadly distributed between the extremes of 'AGI has already been achieved' \citep{al-sibai_openai_2024,arcas_artificial_2023} and 'AGI is conceptually impossible to implement' \citep{dreyfus_what_1992,fjelland_why_2020}.
 An example for a timeline predicted by an expert survey is shown in~\cref{fig:timeline}.\\
 
-Besides the high variance in expert predictions, timelines also have the problem that expert surveys are imprecise development prognoses in general.
-As we exemplified with some examples of incorrect predictions of renowned AI experts in~\cref{sec:introduction}, individual expert predictions are unreliable, and there is no definitive evidence that combining many expert estimations in large-scale surveys improves the prediction reliability.
+Besides the high variance in expert predictions, such timelines also have the problem that expert surveys are an imprecise form of development prognosis in general.
+As we exemplified with some examples of incorrect predictions of renowned AI experts in~\cref{sec:introduction}, individual expert predictions are unreliable.
+And there is no definitive evidence that combining many expert estimations in large-scale surveys improves the prediction reliability.
 Besides their individual and subjective understanding of AGI, experts' survey answers are likely also influenced by the current AI development pace, future funding prospects, and public expectations.
 The history of the field of AI, with multiple AI winters and phases of AI booms, has shown that these conditions tend to change regularly, often quite suddenly and drastically.
 
-\subsection{Technical Approaches}
+\subsection{Technical Approaches}\label{sec:technical_approaches}
 Because there are diverse understandings of AGI, there are also many ideas about how AGI could be implemented on a technical level.
 In the following, we present the currently most commonly pursued approach of scaling up neural-network-based AI models, as well as the most prominent alternative approach: adhering closer to biological analogs.
 
 \subsubsection{Scaling Neural Network Architectures}
 Most state-of-the-art AI systems are based on neural network architectures.
-In the context of AGI, transformer-based LLMs are currently most debated to potentially represent a predecessor of future AGI, but many other advanced AI systems are also based on neural networks.
+In the context of AGI, transformer-based LLMs are currently most debated to potentially represent a predecessor of future AGI.
 The predominant way of advancing these systems is to scale up the underlying networks.
 In this case, scaling means using larger networks with more parameters, which in turn constitutes a need for more training data and increasingly large computational resources.
 The increase in size of LLMs from 2018 to 2022 is displayed in~\cref{fig:llm_sizes}.
@@ -170,7 +173,7 @@ Recent examples of these include the aforementioned transformer architecture \ci
 The predominant problem with scaling up neural networks is the limitation in the availability of training data and computing resources \citep{hidary_ai_2025}.
 As network parameter numbers scale roughly exponentially (cf.~\cref{fig:llm_sizes}), high-quality training data starts to run out, and the building up of compute power lags behind.
 The root cause of this high training data requirement is the relatively low data efficiency of neural networks \citep{huber_comparing_2024}.
-Compared to human experts, AI systems usually require more training data to generalize well for a given task.\\
+Compared to humans, AI systems usually require more training data to generalize well for a given task.\\
 
 From the perspective of AGI development, the problems associated with scaling neural networks are not the main concern with this approach.
 It is, instead, the lack of concrete evidence that scaling neural-network-based AI systems can or will eventually lead to AGI.
@@ -187,12 +190,13 @@ To emulate the behavior of biological neurons efficiently, specialized neuromorp
 An example of this is the spiking neural network architecture (SpiNNaker), which was used to construct a supercomputer with over one million ARM cores specialized for neuron emulation \citep{furber_spinnaker_2014}.
 Its predecessor, SpiNNcloud, deployed at the TU Dresden, uses more than five million cores to emulate over 5.2 billion neurons, which makes it capable of emulating a single digit percentage of the neurons in a human brain \citep{gonzalez_spinnaker2_2023}.\\
 
-While advancements in the computational power of neuromorphic hardware make it seem plausible that the emulation of an entire brain on the neuron level might become possible in the future, the main problem with bioinspired AI lies in the network architecture.
+Advancements in the computational power of neuromorphic hardware make it seem plausible that the emulation of an entire brain on the neuron level might become possible in the future.
+But the main problem with bioinspired AI lies in the network architecture.
 Efforts like the Human Brain Project work on capturing the brain's structure down to individual connections between neurons \citep{human_brain_project}.
-But scanning techniques and resolutions are currently insufficient to yield a complete brain-sized network for emulation \citep{Zanichelli2025StateOB}.
+But scanning techniques and resolutions are currently insufficient to yield a complete brain-sized network to emulate \citep{Zanichelli2025StateOB}.
 Additionally, it is currently undetermined whether a detailed replication of a human brain is sufficient for replicating human intelligence and therefore achieving AGI \citep[pp.1798-1801]{russell_artificial_2021}.
 Even though the neuromorphic approach is more direct than scaling artificial neural networks, the monistic position of physicalism is not undisputed in philosophy. 
-And positions like mind–body dualism dispute that physical replication of the human brain is sufficient to replicate human intelligence.
+Positions like mind–body dualism dispute that physical replication of the human brain is sufficient to replicate human intelligence.
 
 \section{Implications}\label{sec:implications}
 Talking about the implications of AGI necessarily involves making predictions of the future.
@@ -211,7 +215,7 @@ The downside of this approach is that the chance of some assumptions and, theref
 
 Since the first option is of little value to the reader, and the other is approaching the domain of science fiction, we do not discuss any of the numerous existing predictions about the impacts of AGI in detail.
 Instead, we want to point out how the ambiguous definition of AGI makes it significantly harder to make predictions about AGI compared to other technological topics.
-Therefore, the first step when analyzing or discussing any statement about the implications of AGI should be to identify the underlying assumptions that were made to reach that statement.
+Therefore, the first step in analyzing or discussing any statement on the implications of AGI should be to identify the underlying assumptions encoded in that statement.
 
 \section{Conclusion and Outlook}\label{sec:conclusion}
 We have presented an overview of the current state and challenges of the development of AGI, as well as the discussion about it.
@@ -224,11 +228,12 @@ However, the history of AI as a discipline has so far always been characterized 
 It is therefore important to acknowledge that there is no guarantee for a continuous development towards AGI from this point.
 A fact that is underscored by the inaccurate predictions we presented in~\cref{sec:introduction}.
 Additionally, the ambiguous foundation on which the concept of AGI is built makes targeted development towards AGI all but impossible.
-Without an unambiguous understanding of what intelligence, and therefore AGI, is, the development of true AGI systems would be rather incidental, and the chances of achieving and then recognizing an AGI as such are low.
+Without an unambiguous understanding of what intelligence, and therefore AGI, is, the development of true AGI systems would be rather incidental.
+And the chances of achieving and then recognizing an AGI as such are low.
 This means that while most of the focus in the discussion about AGI is on technical aspects in the field of computer science at the moment, new insights about the concept of intelligence from fields like neuroscience or psychology might prove to be more impactful on AGI development.
 To maximize the chances of success in the purposeful creation of AGI, the main effort needs to be directed at the currently insufficiently clear conceptual foundations before turning to details of technical implementation.\\
 
 Considering that the realization of AGI might not be imminent, any discussion about it, either on a technical level or about its implications, could be seen as premature.
 It is, however, important to recognize that the discussion about any technological and societal advancement is best begun before its realization.
-The more impactful a development is, the more important it becomes to start a discussion about it sooner rather than later.
-At the same time, an early consideration of AGI should not distract from the discussion and efforts to solve problems caused by current AI developments.
+The more impactful a development could be, the more important it becomes to start a discussion about it sooner rather than later.
+At the same time, an early consideration of AGI should not distract from the discussion on and efforts to solve problems caused by current AI developments.
